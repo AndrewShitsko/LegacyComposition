@@ -1,5 +1,4 @@
 #pragma once
-#include "stdafx.h"
 #include <iostream>
 
 using namespace std;
@@ -23,7 +22,7 @@ public:
 	void show() {
 		cout << _type << endl;
 	}
-	int getChildren() {
+	static int getChildren() {
 		return countChildren;
 	}
 	virtual void draw() = 0;

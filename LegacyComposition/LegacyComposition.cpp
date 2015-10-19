@@ -10,9 +10,16 @@ int Figure::countChildren = 0;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	Rectangle* rectangle = new Rectangle("Rectangle");
+	Rectangle* newRectangle = new Rectangle("NewRectangle");
+
 	rectangle->show();
 	rectangle->draw();
-	cout << rectangle->getChildren() << endl;
+
+	newRectangle->show();
+	newRectangle->draw();
+
+	cout << "How many children: " << Figure::getChildren() << endl;
+
 	system("pause");
 	return 0;
 }
